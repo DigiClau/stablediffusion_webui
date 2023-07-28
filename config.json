@@ -62,7 +62,7 @@
     "training_enable_tensorboard": false,
     "training_tensorboard_save_images": false,
     "training_tensorboard_flush_every": 120,
-    "sd_model_checkpoint": "sd_xl_base_1.0.safetensors [31e35c80fc]",
+    "sd_model_checkpoint": "v1-5-pruned-emaonly.ckpt [cc6cb27103]",
     "sd_checkpoint_cache": 0,
     "sd_vae_checkpoint_cache": 0,
     "sd_vae": "Automatic",
@@ -128,7 +128,7 @@
     "eta_noise_seed_delta": 0,
     "always_discard_next_to_last_sigma": false,
     "disabled_extensions": [],
-    "sd_checkpoint_hash": "31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b",
+    "sd_checkpoint_hash": "cc6cb27103417325ff94f52b7a5d2dde45a7515b25c255d8e396c90014281516",
     "ldsr_steps": 100,
     "ldsr_cached": false,
     "SWIN_tile": 192,
@@ -180,7 +180,9 @@
     "control_net_cfg_based_guidance": false,
     "control_net_sync_field_args": false,
     "quicksettings_list": [
-        "sd_model_checkpoint"
+        "sd_model_checkpoint",
+        "sd_vae",
+        "CLIP_stop_at_last_layers"
     ],
     "restore_config_state_file": "",
     "ui_reorder_list": [
