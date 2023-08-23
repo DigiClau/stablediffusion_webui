@@ -335,11 +335,7 @@ class Script(scripts.Script):
             all_images = grids + all_images
 
         if save_video:
-#            input_pattern = os.path.join(loopback_wave_images_path, "%d.png")
-            from datetime import datetime
-            now = datetime.now() # get the current date and time
-            date_string = now.strftime("%Y-%m-%d")
-            input_pattern = os.path.join(loopback_wave_images_path, date_string, "%d.png")
+            input_pattern = os.path.join(loopback_wave_images_path, "%d.png")
             encode_video(input_pattern, initial_image_number, loopback_wave_images_path, video_fps, video_quality, video_encoding, segment_video, video_segment_duration, ffmpeg_path)
 
         processed = Processed(p, all_images, initial_seed, initial_info)
